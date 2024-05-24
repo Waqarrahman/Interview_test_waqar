@@ -1,0 +1,15 @@
+{
+  "name": "flexi_school_qa_assessment",
+  "version": "1.0.0",
+  "description": "This project is created to Flexi school QA assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Waqar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.10.0",
+    "typescript": "^5.4.5"
+  }
+}
