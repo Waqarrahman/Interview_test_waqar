@@ -12,9 +12,10 @@ describe('Giphy App: Infinite scroll test', () => {
 
     const scrollDownToBottom = () => {
       cy.scrollTo('bottom')
-      cy.document().then((doc) => {
+      cy.wait(1000)
+      cy.document().then((docs) => {
 
-        const scrolledToBottom = doc.documentElement.scrollHeight - window.innerHeight <= window.scrollY;
+        const scrolledToBottom = docs.documentElement.scrollHeight - window.innerHeight <= window.scrollY;
         if (!scrolledToBottom) {
           debugger
           scrollDownToBottom()
